@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+ 
+}
+/* main container styles */
+.container{
+  padding-top: 5%;
+}
+
+/* Digital Alarm Clock styles */
+
+.alarm-clock{
+  background-color: black;
+  color:white;
+  border:1px solid grey;
+  height:fit-content;
+  width: 30%;
+  margin: auto;
+}
+
+.alarm-clock > h1 {
+  padding-left: 20%;
+  margin : 20px 0;
+}
+
+.alarm-keys{
+margin:20px;
+padding-left: 24%;
+}
+
+.alarm-keys > span {
+  font-size: 30px;
+}
+
+#session{
+  padding-left: 20px;
+}
+
+
+/* Alarm-list styles */
+
+.alarm-list{
+  background-color: whitesmoke;
+  color:black;
+  border:1px solid grey;
+  height:fit-content;
+  width: 30%;
+  margin:auto;
+}
