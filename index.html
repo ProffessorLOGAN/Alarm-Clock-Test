@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    <!-- Main container -->
     <div class="container">
 
 
@@ -17,23 +19,82 @@
             <h1>Digital-Alarm-Clock</h1>
             <hr />
             <div class="alarm-keys">
-                <span id="hours">Hour</span> 
+                <span id="hours">Hour</span>
                 <span>:</span>
                 <span id="minutes">Minutes</span>
                 <span>:</span>
                 <span id="seconds">Seconds</span>
-                
+
                 <span id="session">AM/PM</span>
             </div>
 
         </div>
 
+        <!-- alarm form and list container  -->
         <div class="alarm-list">
 
-        </div>
 
-    </div>
-    <script type="text/javascript" src="script.js"></script>
+            <!-- alarm set form  -->
+            <div class="set-alarm">
+                <form class="set-alarm-form" action="index.html" method="POST">
+                    <div class="input-section">
+                        <tr>
+                            <div class="select-field">
+                                <select>
+                                    <option value="Hour" selected hidden>Hours</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="select-field">
+                                <select>
+                                    <option value="Minute" selected hidden>Minutes</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class="select-field">
+                                <select>
+                                    <option value="am/pm" selected hidden>AM/PM</option>
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+
+                                </select>
+                            </div>
+                        </tr>
+                    </div>
+                    <div class="button-section">
+
+                        <tr>
+                            <button class="alarm-button" type="submit">Set Alarm</button>
+                        </tr>
+                    </div>
+
+                    <!-- list of alarm-clock timings -->
+
+
+                    <div class="list-container">
+                        <tr>
+
+                            <ul class="list-array">
+                                <li>
+                                    <span>10 bje </span>
+                                </li>
+                                <li>
+                                    <button class="delete-button">Delete</button>
+                                </li>
+                            </ul>
+                        </tr>
+
+                    </div>
+
+                </form>
+            </div>
+
+
+            <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

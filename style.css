@@ -5,8 +5,8 @@
 }
 /* main container styles */
 .container{
-  padding-top: 5%;
-}
+  margin-top: 5%;
+ }
 
 /* Digital Alarm Clock styles */
 
@@ -15,7 +15,7 @@
   color:white;
   border:1px solid grey;
   height:fit-content;
-  width: 30%;
+  width: 25%;
   margin: auto;
 }
 
@@ -41,10 +41,77 @@ padding-left: 24%;
 /* Alarm-list styles */
 
 .alarm-list{
-  background-color: whitesmoke;
+  background-color: black;
   color:black;
   border:1px solid grey;
   height:fit-content;
-  width: 30%;
+  width: 25%;
   margin:auto;
+  margin-top: 20px;;
+}
+
+
+.set-alarm-form{
+  margin: 10px;
+  display:flex;
+  flex-direction: column;
+}
+
+.input-section{
+  display: flex;
+  width: 100%;
+  padding-left: 50px;
+  
+  }
+
+  .select-field{
+    margin-top:10px;
+    margin-left:20px;
+  }
+  .select-field > select{
+    outline: none;
+    border: none;
+    font-size: 25px;
+  }
+
+  .alarm-button {
+    outline:none;
+    border:none;
+    font-size: 25px;
+    margin-top: 20px;
+    width: 75%;
+    margin-left: 70px;
+    margin-bottom: 10px;
+  }
+
+  /* Lists of all alarm timings styles */
+.list-container{
+  display: flex;
+  border-top: 1px solid whitesmoke;
+ 
+  
+}
+
+.list-array{
+  display: flex;
+  border-bottom: 1px solid grey;
+  width: 99%;
+  margin: auto;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  color:white;
+  justify-content: space-evenly;
+}
+
+.list-array > li {
+  list-style: none;
+  font-size: 22px;
+}
+
+.delete-button{
+  outline: none;
+  border: none;
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 5px;
 }
